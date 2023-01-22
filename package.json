@@ -22,12 +22,17 @@
     "next": "13.1.1",
     "next-auth": "4.0.0-beta.7",
     "npm": "^9.2.0",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "recoil": "^0.7.6",
     "svelte": "3.44.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.2.4",
     "vercel": "^28.12.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwind-scrollbar": "^2.1.0"
   }
 }

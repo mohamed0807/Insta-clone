@@ -45,7 +45,7 @@ const Post = ({ id, userName, userImg, Img, caption }) => {
       timestamp: serverTimestamp(),
     });
   };
-  console.log( "com",comments.map((data)=>data.data()))
+  // console.log( "com",comments.map((data)=>data.data()))
   return (
     <div className="bg-white my-7 border rounded-sm ">
       <div className="flex items-center p-5">
@@ -75,21 +75,23 @@ const Post = ({ id, userName, userImg, Img, caption }) => {
         <span className="font-bold mr-1 ">{userName}</span>
         {caption}
       </p>
-      {
-        comments.length > 0 && (
-          <div className="ml-10 h-20 overflow-y-scroll scrollbar-thumb-black scrollbar-thin" >
-            {
-              comments.map((comment)=>(
-                <div key={comment.id} className="flex items-center space-x-2 mb-3" >
-                  <img src={comment.data().userImage} className="h-7 rounded-full" alt="img" />
-                  <p className="flex-1 text-sm"><span className="font-bold" >{comment.data().username}  </span>{comment.data().comment}</p>
-                
-                </div>
-              ))
-            }
-          </div>
-        )
-      }
+      {comments.length > 0 && (
+        <div className="ml-10 h-20 overflow-y-scroll scrollbar-thumb-black scrollbar-thin">
+          {comments.map((comment) => (
+            <div key={comment.id} className="flex items-center space-x-2 mb-3">
+              <img
+                src={comment.data().userImage}
+                className="h-7 rounded-full"
+                alt="img"
+              />
+              <p className="flex-1 text-sm">
+                <span className="font-bold">{comment.data().username} </span>
+                {comment.data().comment}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
       {session && (
         <form className="flex items-center p-4">
           <FaceSmileIcon className="h-7" />

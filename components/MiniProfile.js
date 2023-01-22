@@ -4,7 +4,7 @@ import { signOut,useSession } from 'next-auth/react'
 
 const MiniProfile = () => {
   const {data:session}=useSession();
-  console.log("sessionupgrade:",session)
+  // console.log("sessionupgrade:",session)
   return (
     <div className='flex items-center justify-between mt-14 ml-10  ' > 
       <img src="https://www.bing.com/th?id=OIP.QZNkvSPhiLMPSOgpy2O0MwHaJ0&w=150&h=198&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="rounded-full border p-[2px] w-16 h-16 " />

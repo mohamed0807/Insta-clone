@@ -20,7 +20,7 @@ const Header = () => {
   const router = useRouter()
   const [open,setOpen]=useRecoilState(modalState)
   // const currentValue = useRecoilValue(modalState) this is for see the value of current state like useSelector in redux
-  console.log(session);
+  // console.log(session);
   return (
     <div className="shadow-sm border-b bg-white  sticky top-0 z-50">
       <div className="flex justify-between max-w-6xl  ">

@@ -6,9 +6,11 @@ import Image from "next/image";
 const signin = ({ providers }) => {
   return (
     <div>
+      <div>
       <Header />
+      </div>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center">
-        <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
+        <img className="mt-56 w-80" src="https://links.papareact.com/ocw" alt="" />
         <p className="text-xs italic">
           This is not a real app educational purpose only
         </p>

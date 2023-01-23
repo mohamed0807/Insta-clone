@@ -10,6 +10,7 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  secret: 'hellotherehello' ,
   pages:{
     signIn:"/auth/signin"
   },
